@@ -11,20 +11,29 @@
  >
  > Have to load up the left then right of the truck and keep it as balanced as possible. How many on each side? Melons always go together.
  */
-let oc = 14
-let wc = 3
-let ow = 100
-let ww = 200
-let to = oc * ow
-let tw = wc * ww
-let ttl = to + tw
-let es = ttl / 2
-let lhso = es / ow
-let rhso = oc - lhso
+let oc = 14 // orange count
+let wc = 3 // watermelon count
+let ow = 100 // organge weight
+let ww = 200 // watermelon weight
+let to = oc * ow // total orange = orange count * orange weight
+let tw = wc * ww //total watermelon = watermelon weight
+let ttl = to + tw // total trck left? = total orange + total watermelon
+let es = ttl / 2 // estimate? = total truck left / 2
+let lhso = es // left how many side orange = estimate of watermelon
+let rhso = oc - lhso //right how many side orange = orage count - left how many side orange
 
 
 //:  - Experiment: Rewrite the code so that it makes sense without needing a note. Use meaningful names and comments.
-
+let orangeCount = 14
+let watermelonCount = 3
+let orangeWeight = 100
+let watermelonWeight = 200
+let totalOranges =  orangeCount * orangeWeight
+let totalWatermelon = watermelonCount * watermelonWeight
+let totalTogetherLeft = totalOranges + totalWatermelon
+let estimate = totalTogetherLeft / 2
+let leftHasOrange = estimate
+let rightHasOrange =  orangeCount - leftHasOrange
 /*:
   _Copyright © 2021 Apple Inc._
  
